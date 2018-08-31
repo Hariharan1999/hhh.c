@@ -1,15 +1,22 @@
 #include<stdio.h>
+int get(int n,int a[])
+{
+ int i,x;
+ for(i=0;i<n;i++)
+  {
+    scanf("%d",&a[i]);
+  }
+  return x;
+}
+
 int main()
 {
-  int n, a[100],i;
+  int n, a[100],i,x;
   
   printf("Enter the size of n\n");
   scanf("%d", &n);
   printf("Enter the %d numbers\n",n);
-  for(i=0;i<n;i++)
-  {
-    scanf("%d",&a[i]);
-  }
+  x=get(n,a);
   for(i=0;i<n;i++)
   {
     printf("You entered \n%d\n",a[i]);
